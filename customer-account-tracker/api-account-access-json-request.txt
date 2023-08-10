@@ -1,0 +1,109 @@
+Account service:
+========================
+addAccount: POST
+URL: http://localhost:2023/accounts/v1.0/account
+Headers:Key(x-suresh-channel), value(x-suresh-channel)
+Request:
+{
+  "branchAddress": "HDFC Ameerpet Hyderabad",
+  "branchName": "HDFC Hyderabad",
+  "openingBalance": 1000,
+  "status": true,
+  "userId": "104",
+  "userType": "Student"
+}
+---------------------
+getAllAccount: GET
+URL: http://localhost:2023/accounts/v1.0/account
+Headers:Key(x-suresh-channel), value(x-suresh-channel)
+Request:
+------------------------
+getAccount: GET
+URL: http://localhost:2023/accounts/v1.0/account/102
+Headers:Key(x-suresh-channel), value(x-suresh-channel)
+Request:
+------------------------
+getAccount: PUT
+URL: http://localhost:2023/accounts/v1.0/account
+Headers:Key(x-suresh-channel), value(x-suresh-channel)
+Request:
+{
+  "branchAddress": "HDFC Ameerpet Hyderabad",
+  "branchName": "HDFC Hyderabad",
+  "openingBalance": 1000,
+  "status": true,
+  "userId": "104",
+  "userType": "Student"
+}
+------------------------
+deleteAccount: DELETE
+URL: http://localhost:2023/accounts/v1.0/account/102
+Headers:Key(x-suresh-channel), value(x-suresh-channel)
+Request:
+===============================
+Customer service:
+========================
+addCustomer: POST
+URL: http://localhost:2023/customers/v1.0/customer
+Headers:Key(x-suresh-channel), value(x-suresh-channel)
+Request:
+{
+  "branchAddress": "HDFC Ameerpet Hyderabad",
+  "branchName": "HDFC Hyderabad",
+  "openingBalance": 1000,
+  "status": true,
+  "userId": "104",
+  "userType": "Student"
+}
+---------------------
+getAllCustomer: GET
+URL: http://localhost:2023/customers/v1.0/customer
+Headers:Key(x-suresh-channel), value(x-suresh-channel)
+Request:
+------------------------
+getCustomer: GET
+URL: http://localhost:2023/customers/v1.0/customer/102
+Headers:Key(x-suresh-channel), value(x-suresh-channel)
+Request:
+------------------------
+getCustomer: PUT
+URL: http://localhost:2023/customers/v1.0/customer
+Headers:Key(x-suresh-channel), value(x-suresh-channel)
+Request:
+{
+  "branchAddress": "HDFC Ameerpet Hyderabad",
+  "branchName": "HDFC Hyderabad",
+  "openingBalance": 1000,
+  "status": true,
+  "userId": "104",
+  "userType": "Student"
+}
+------------------------
+deleteCustomer: DELETE
+URL: http://localhost:2023/customers/v1.0/customer/102
+Headers:Key(x-suresh-channel), value(x-suresh-channel)
+Request:
+
+===============================
+Payment service:
+========================
+confirmPayment: POST
+URL: http://localhost:2023/wallets/v1.0/pay
+Headers:Key(x-suresh-channel), value(x-suresh-channel)
+Request:
+{
+  "amount": 100,
+  "codeType": "string",
+  "currency": "string",
+  "customerId": "101",
+  "customerName": "string",
+  "customerPhNo": "string",
+  "customerType": "string",
+  "desc": "string",
+  "merchantId": "102",
+  "merchantLocation": "string",
+  "merchantName": "string",
+  "merchantPhNo": "string",
+  "merchantType": "string",
+  "paymentMethod": "string"
+}
